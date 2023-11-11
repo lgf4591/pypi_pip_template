@@ -15,7 +15,7 @@ name: Upload Python Package To Pypi
 on:  
   push:
     tags:
-      - "*"
+      - 'v*'
     branches:
       - main
 
