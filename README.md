@@ -173,4 +173,4 @@ pip install -i https://pypi.org/simple pypi-pip-template==0.0.1 ((recomend))
 ### References
 - https://www.youtube.com/watch?v=v4bkJef4W94
 - https://packaging.python.org/tutorials/packaging-projects/
-- 
+- [Python3 通过TOML进行打包与上传到Pypi的踩坑日记](https://blog.csdn.net/ViniJack/article/details/134133414)
