@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.realpath(__file__+'/gui')))
 sys.path.append(os.path.dirname(os.path.realpath(__file__+'/utils')))
 
 
-__version__ = '0.0.6'
+__version__ = '0.0.7'
 __description__ = 'a template for build python package to upload pypi repository bu using pip'
 __author__ = 'lgf4591'
 __author_email__ = 'lgf4591@outlook.com'

@@ -168,8 +168,36 @@ pip install -i https://pypi.org/simple pypi-pip-template==0.0.1 ((recomend))
 ```
 
 
+## build and publish
+```cmd
 
+.venv\Scripts\activate.bat
+RMDIR /Q/S build
+RMDIR /Q/S dist
+RMDIR /Q/S pypi_pip_template.egg-info
+python setup.py sdist bdist_wheel
+python -m twine upload --repository pypi dist/*
 
+```
+
+```powershell
+.venv/Scripts/activate.bat
+Remove-Item -LiteralPath "dist" -Force -Recurse
+Remove-Item -LiteralPath "build" -Force -Recurse
+Remove-Item -LiteralPath "pypi_pip_template.egg-info" -Force -Recurse
+python setup.py sdist bdist_wheel
+python -m twine upload --repository pypi dist/*
+
+```
+
+```bash
+
+.venv/Scripts/activate.bat
+rm -rf dist/ build/ pypi_pip_template.egg-info/
+python -m twine upload --repository pypi dist/*
+python -m twine upload --repository pypi dist/*
+
+```
 
 
 ### References
