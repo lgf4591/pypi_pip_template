@@ -99,6 +99,8 @@ pip freeze >requirements.txt
 windows
 ```powershell
 Remove-Item -LiteralPath "dist" -Force -Recurse
+Remove-Item -LiteralPath "build" -Force -Recurse
+Remove-Item -LiteralPath "pypi_pip_template.egg-info" -Force -Recurse
 python setup.py sdist bdist_wheel
 
 ```
