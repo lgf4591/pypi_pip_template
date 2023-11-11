@@ -74,8 +74,7 @@ python -m venv .venv
 pip list
 
 python -m pip install --upgrade pip
-python -m pip install --upgrade build setuptools wheel
-python -m pip install --upgrade twine
+python -m pip install --upgrade build setuptools wheel twine
 
 pip freeze >requirements.txt 
 
@@ -90,8 +89,7 @@ python3 -m venv .venv
 pip list
 
 python3 -m pip install --upgrade pip
-python3 -m pip install --upgrade build setuptools wheel
-python3 -m pip install --upgrade twine
+python3 -m pip install --upgrade build setuptools wheel twine
 
 pip freeze >requirements.txt 
 
